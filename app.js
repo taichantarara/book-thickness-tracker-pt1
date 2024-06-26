@@ -1,6 +1,11 @@
 let books = JSON.parse(localStorage.getItem('books')) || [];
 let chart;
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('add-book-btn').addEventListener('click', addBook);
+    updateChart();
+});
+
 function addBook() {
     const title = document.getElementById('book-title').value;
     const thickness = parseInt(document.getElementById('book-thickness').value);
@@ -48,5 +53,3 @@ function updateChart() {
         }
     });
 }
-
-updateChart();

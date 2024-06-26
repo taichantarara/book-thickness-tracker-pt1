@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>読書記録アプリ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>読書記録アプリ</h1>
+        <div id="book-layers"></div>
+        <div id="book-form">
+            <input type="text" id="book-title" placeholder="本のタイトル">
+            <input type="number" id="book-thickness" placeholder="本の厚さ（mm）">
+            <button onclick="addBook()">追加</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
